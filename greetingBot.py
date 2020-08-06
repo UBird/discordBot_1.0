@@ -250,7 +250,7 @@ async def animeWallpaper(ctx):
 async def weather(ctx, city):
     async def getWeather():
         url = "http://api.openweathermap.org/data/2.5/weather?q="
-        apikey = "&appid=2b224bf41e456f4432d30b7ec99b77cf"
+        apikey = ""
         unitChanger = "&units=imperial"
         response = requests.get(url + city + unitChanger + apikey)
         weatherData = response.json()
@@ -284,4 +284,4 @@ async def weather(ctx, city):
         #   f.write(r.content)
         #essentially what this does is that it takes the content of the url - which is given as an image in bytes, and writes it to
         #a filename of your choosing with wb (write bytes) and downloads the image in the same directory as the python program
-client.run('')
+client.run('NzM2NDAyMTA0MjQ3MTI0MDUw.XxuR5w.qFgtpzBIfMNIIHYjWv_RmQdISsE')
